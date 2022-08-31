@@ -1,38 +1,233 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
+  background-color: #faf3e3;
+  padding: 2%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navDiv {
+  background-color: #709f88;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.navDiv h3 {
+  color: #faf3e3;
+  font-weight: 500;
+}
+.navDiv h3:hover {
+  /* opacity: 0.9; */
+  transition: 1.2s;
+  cursor: pointer;
+}
+.searchDiv {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  background-color: #709f88;
+  margin-top: 2%;
+  border-radius: 10px;
+  padding: 3%;
+}
+.leftsearch {
+  text-align: left;
+  padding: 2%;
+  background-color: #709f88;
+  border-radius: 5px;
+  width: 40%;
+}
+input[type="text"] {
+  margin: 3% 1%;
+  width: 60%;
+  padding: 1%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: large;
+}
+.searchDiv button {
+  padding: 2%;
+  border: none;
+  border-radius: 5px;
+  color: #709f88;
+  background-color: #faf3e3;
+  font-weight: bold;
+}
+.searchDiv button:hover {
+  cursor: pointer;
+}
+.parentSearch {
+  background-color: #faf3e3;
+  padding: 10%;
+  position: relative;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.abouthead {
+  font-size: 35px;
+  font-weight: 400;
+  color: #2a6356;
+}
+.randomParent {
+  background: rgb(112, 159, 136);
+  background: linear-gradient(
+    180deg,
+    rgba(112, 159, 136, 1) 0%,
+    rgba(250, 243, 227, 1) 100%
+  );
+  padding: 5%;
+  border-radius: 10px;
+}
+.randomContent {
+  padding: 4% 6%;
+  border-radius: 10px;
+
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+footer {
+  background-color: #709f88;
+  color: #faf3e3;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+.individual {
+  background: rgb(112, 159, 136);
+  background: linear-gradient(
+    193deg,
+    rgba(112, 159, 136, 1) 0%,
+    rgba(250, 243, 227, 1) 62%
+  );
+  padding: 3%;
+  border-radius: 10px;
+  line-height: 2;
+}
+.individual h3,
+h4 {
+  color: #2a6356;
+}
+.result {
+  background-color: #bed4c3;
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8%;
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 20px 0 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultContent {
+  width: 60%;
+  line-height: 1.6;
+  text-align: left;
+}
+.resultContent h2,
+h3,
+h4 {
+  color: #2a6356;
+}
+.btnb {
+  padding: 1.5%;
+  border: none;
+  background-color: #00342e;
+  color: #bed4c3;
+  font-weight: bold;
+  border-radius: 7px;
+}
+.btnr {
+  padding: 1.5%;
+  border: none;
+  color: #bed4c3;
+  font-weight: bold;
+  border-radius: 7px;
+  background-color: #00342e;
+}
+.btnb:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.btnr:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.individualBook {
+  background: rgb(112, 159, 136);
+  background: linear-gradient(
+    180deg,
+    rgba(112, 159, 136, 1) 0%,
+    rgba(250, 243, 227, 1) 100%
+  );
+  padding: 5%;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.bookContent {
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+.vl {
+  border-left: 1px solid #00342e;
+  height: 500px;
+}
+.btnbb {
+  padding: 1.5%;
+  border: none;
+  color: #bed4c3;
+  font-weight: bold;
+  border-radius: 7px;
+  background-color: #00342e;
+  margin-top: 2%;
+}
+.btnbb:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.gynamicBooks {
+  background: rgb(112, 159, 136);
+  background: linear-gradient(
+    180deg,
+    rgba(112, 159, 136, 1) 0%,
+    rgba(250, 243, 227, 1) 100%
+  );
+  padding: 5%;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.box {
+  width: 500px;
+  text-align: center;
+  background-color: #faf3e3;
+  padding: 2%;
+  text-align: left;
+}
+.btnreset {
+  padding: 2%;
+  width: 90%;
+  background-color: #00342e;
+  color: #faf3e3;
+  margin-left: 5%;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
 }
